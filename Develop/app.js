@@ -175,7 +175,7 @@ function addHtml(member) {
             </div>
         </div>`
         }
-        console.log("adding team member");
+        console.log("Adding team member..");
         fs.appendFile("./output/team.html", data, function (err) {
             if (err) {
                 return reject(err);
@@ -193,6 +193,6 @@ function finishHtml() {
             console.log(err);
         };
     });
-    console.log("end");
+    console.log("Success!!");
 }
 prompt();
